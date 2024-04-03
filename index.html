@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Wars</title>
+    <link href="https://fonts.cdnfonts.com/css/star-wars" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__img">
+          <img src="./img/sw-background.jpg" alt="" />
+        </div>
+        <div class="header__title">star wars api</div>
+      </div>
+    </header>
+
+    <section class="list container">
+      <div class="card">
+        <div class="card__info">
+          <div class="card__title">
+            <div class="card__title-img">
+              <img class="title-img" src="./img/darth-vader.png" alt="" />
+            </div>
+            <div class="card__title-text">Characters</div>
+          </div>
+          <div
+            id="characters_list"
+            class="card__list"
+            data-url="https://swapi.dev/api/people/"
+          ></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__info">
+          <div class="card__title">
+            <div class="card__title-img">
+              <img class="title-img" src="./img/planet.png" alt="" />
+            </div>
+            <div class="card__title-text">Planets</div>
+          </div>
+          <div
+            class="card__list"
+            id="planets_list"
+            data-url="https://swapi.dev/api/planets/"
+          ></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__info">
+          <div class="card__title">
+            <div class="card__title-img">
+              <img class="title-img" src="./img/spaceship.png" alt="" />
+            </div>
+            <div class="card__title-text">Vehicles</div>
+          </div>
+          <div
+            class="card__list"
+            id="vehicles_list"
+            data-url="https://swapi.dev/api/vehicles/"
+          ></div>
+        </div>
+      </div>
+    </section>
+    <section class="modal-wrapper">
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </section>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
