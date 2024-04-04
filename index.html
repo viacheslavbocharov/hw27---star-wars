@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style/reset.css" />
     <link
       rel="stylesheet"
@@ -43,6 +47,26 @@
             data-url="https://swapi.dev/api/people/"
           ></div>
         </div>
+        <div class="card__pagination">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination characters__pagination">
+              <li class="page-item">
+                <a
+                  class="page-link"
+                  aria-label="Previous"
+                  id="previouse_characters"
+                >
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" aria-label="Next" id="next_characters">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
 
       <div class="card">
@@ -58,6 +82,26 @@
             id="planets_list"
             data-url="https://swapi.dev/api/planets/"
           ></div>
+        </div>
+        <div class="card__pagination">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination planets__pagination">
+              <li class="page-item">
+                <a
+                  class="page-link"
+                  aria-label="Previous"
+                  id="previouse_planets"
+                >
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" aria-label="Next" id="next_planets">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
 
@@ -75,35 +119,58 @@
             data-url="https://swapi.dev/api/vehicles/"
           ></div>
         </div>
+        <div class="card__pagination">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination vehicles__pagination">
+              <li class="page-item">
+                <a
+                  class="page-link"
+                  aria-label="Previous"
+                  id="previouse_vehicles"
+                >
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" aria-label="Next" id="next_vehicles">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </section>
+
     <section class="modal-wrapper">
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Launch demo modal
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+
+              <div class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                <span class="material-icons close-icon"> close </span>
+              </div>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+              <div class="btn btn-secondary" data-bs-dismiss="modal">Close</div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-
     </section>
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/functions.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>

@@ -40,7 +40,9 @@ body {
     border-radius: 30px;
     padding: 35px 30px 25px 30px;
     background-color: black;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card__info {}
@@ -159,7 +161,7 @@ body {
     padding-top: 20px;
     display: flex;
     justify-content: center;
-   
+
 }
 
 .page-link {
@@ -171,3 +173,56 @@ body {
 }
 
 .card__img {}
+
+
+.modal-content {
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 35px 30px 25px 30px;
+    background-color: black;
+}
+
+.modal-title {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    color: white;
+    font-size: 24px;
+}
+
+.modal__desc {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    color: white;
+    font-size: 18px;
+}
+
+.btn-secondary{
+    --bs-btn-bg: #000;
+    --bs-btn-border-color: #fff;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #fff;
+    --bs-btn-hover-border-color: #fff;
+    opacity: 0.5;
+}
+
+.btn-secondary:hover{
+    color: #000;
+    opacity: 1;
+}
+
+.fade{
+    background-color: #000000d4;
+}
+
+
+.close-icon{
+    color: #fff;
+}
+
+.btn-close{
+     --bs-btn-close-hover-opacity: 1;
+     --bs-btn-close-focus-shadow: 0 0 0 0.25rem #000;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
